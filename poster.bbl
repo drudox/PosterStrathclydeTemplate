@@ -1,0 +1,31 @@
+\begin{thebibliography}{1}
+
+\bibitem{tizia}
+Richard Vonlanthen and Peter~A. Monkewitz.
+\newblock Grid turbulence in dilute polymer solutions: Peo in water.
+\newblock {\em Journal of Fluid Mechanics}, 730:76–98, 2013.
+
+\bibitem{mack}
+Malcolm Mackley.
+\newblock Stretching polymer chains.
+\newblock {\em Rheologica Acta}, 49(5):443--458, May 2010.
+
+\bibitem{trouton}
+Fred.~T. Trouton.
+\newblock On the coefficient of viscous traction and its relation to that of
+  viscosity.
+\newblock {\em Proceedings of the Royal Society of London A: Mathematical,
+  Physical and Engineering Sciences}, 77(519):426--440, 1906.
+
+\bibitem{demos}
+Theo G.~Theofanous Demosthenes~Kivotides, S. Louise~Wilkin.
+\newblock Stretching of polymer chains by fluctuating flow fields.
+\newblock {\em Physics Letters A}, 375(Issue 1):48--52.
+
+\bibitem{demos2}
+Demosthenes Kivotides.
+\newblock A method for the computation of turbulent polymeric liquids including
+  hydrodynamic interactions and chain entanglements.
+\newblock {\em Physics Letters A}, 381(Issue 6):629--635.
+
+\end{thebibliography}

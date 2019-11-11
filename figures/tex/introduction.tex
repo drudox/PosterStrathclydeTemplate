@@ -1,0 +1,416 @@
+\chapter{Introduction}\label{chap_introduction}
+% The introduction section sets the scene for your own results by reviewing relevant literature and current research publications. Highlight any conflicts between published studies and discuss possible reasons.  Don’t be afraid to be critical of other studies and ensure you relate the literature to your research findings. Establish the ‘known’ and ‘unknown’ concepts in your area of research, as a way of identifying further research questions. You should make use of electronic databases such as science direct, web of knowledge; journals; theses; textbooks and the Strathclyde library service (www.lib.strath.ac.uk). Ensure you cite all external studies and statements and include citations in a list at the end of the report (there are a number of free citation tools i.e. EndNote or Zotero). Results should not be discussed in the literature review.
+
+% Within the introduction you may wish to recap the objectives of your study in light of the findings from literature, by including an ‘Objectives’ sub-section. This reminds the reader of the motivation, research questions to be answered and approach.
+
+%
+%Much of human history has been influenced by the availability of materials. 
+%In facts, history is divided into eras named after the primary materials used; the Stone age, the Bronze age, and the Iron age.
+%Similary, we can assert that in the twentieth century we entered the \textit{Polymer Age}.~\cite{pp}
+%The research about the polymers in the last decade is increase exponentially; the behaviour 
+%of this \textit{macromolecules} are not yet completely know, in particular the study from the mesoscopic point of view, and the interations with external force.
+%For this purpose the study of the polymeric liquids (interaction macromolecule - fluid) is the more suittable, and looks to be the best candidate for this kind of research, that involves in particular the rheologic state of the polymer and it's response at the external force due to the turbulent velocity field of the solvent.
+%
+%
+%
+%The industrial reality nowadays experiences an intense transformation, due to the strong development of polymeric materials: the numerous advantages related to polymer manufacturing should be balanced by a strong knowledge and comprehension of particles behaviour. Computational Fluid Dynamic (CFD) can offer an efficient support to the prediction of macromolecules dynamics and refined home-made codes are usually designed and strengthened to this aim. 
+%Recent works have proposed analytical model of different kind of molecules deformations; the dynamics of polymer chains in solutions has been recently investigated in the numerical work of  Kivotedes et al [1] and two main approaches have been used excluding the volume interaction effects: the first pairwise potential forces while the second promotes chain uncrossability by approximating the beads behaviour with spring-spring model. The authors of [1] took into account hydrodynamics interactions and thermal fluctuation (Brownian motion).
+%The attention on the same course-grained macromolecular dynamics, focusing on real chain elasticity in dense polymer solution has been proposed in the work of [2], where a parameter-free numerical strategy has been developed.  The survey of  [3] sets Brownian-level interactions modelling as main objective.
+%
+
+Much of human history has been influenced by the availability and use of materials. In fact, history is divided into eras named after the primary materials used; the Stone age, the Bronze age, and the Iron age. Similary, we can assert that in the twentieth century we entered the \textit{Polymer Age}.~\cite{pp}. 
+A polymer is a substance composed of molecules charaterized by the multiple repetition of one or more species of atoms or group of atoms (called monomers) linked to each other in amount sufficient to 
+provide a set of properties that do not vary markedly with the addition of one
+or a few consitutional repeating unit~\cite{bower}.
+The research about the polymers in the last two decade has increased exponentially.
+Despite the effort of researchers, the research of these \textit{macromolecules} have not yet completely given a deep knowledge and prediction of polymer behaviour.
+For this reason understand the polymer features and give accurate predicion is a challenge for thousands of reserchers.
+
+As says above polymer are composed by long chain orf monomer (\textit{Polymer-chain}) for this reason thus the mesoscopic scale is the more suitable for studying the Polymer characterization. 
+%when they interact with external forces, and for study their conformation and configuration. 
+Recently was also observed that a solution of polymers and liquids change the liquid proprietes~\cite{keller} (drag reduction, cristallization)~\cite{doi}
+for this reason several studies have been performed in order to understand how the fluid properties change when polymer chains is dispersed in it. 
+But has also aroused much interests the study of polymer chain when interact with external forces due to surrounding solvent~\cite{grace}.
+
+The study of the polymeric liquids is perform in two different way:
+\begin{itemize}
+\item Experimentally : difficulty to catch the correct behaviour of the polymer chain.~\cite{mack}
+\item Numerics : using high order computational code \textit{(mesoscopic Computational Fluid Dynamics)}~\cite{demos5}
+\end{itemize}
+
+The numerical simulation of the polymeric liquids (interaction macromolecule - fluid) is the more suitable,
+and although it is a very new science, it looks to be the best candidate for understanding the behaviour of polymer liquid.
+This tecnique involves the study of polymer rheology and the changing of its conformations when subjected to external forces due to the velocity field (turbulence) of the solvent~\cite{demos4}. 
+This project is very helpful for the Chemical and Process Engineering, since one of the problem in the process plants is to reducing the drag into the liquid transport pipe.  
+
+
+\section{Literature review}
+The industrial reality nowadays experiences an intense transformation, due to the strong development of polymeric materials: the numerous advantages related to polymer manufacturing should be balanced by a strong knowledge and comprehension of particles behaviour. Numerical simulation \textit{(Computational Fluid Dynamic, CFD)} can offer an efficient support to the prediction of molecules dynamics and refined home-made codes are usually designed and strengthened with this aim~\cite{dynamic}.
+
+The investigations about rheology, molecular deformation and streching lay the foundations in relatively recent time (the early 1940s), when Fokker-Planck diffusion type mathematical model were developed by Kunh \emph{et al}~\cite{kuhn}: the mathematicians introduced the concept of polymers with a behaviour of  a random spiral. A remarkable contribution to the beginning of modern research by the work of Doi~\emph{et al.}\cite{doi2}, who introduced the Brownian motion in the equilibrium of a fully entangled chain, by means of a Langevian equation; the study starting from the non-linear dependency of polymeric liquid stress respect to the history of deformation, proposed a molecular based constituve equation. 
+
+After a 10 year period the attention shifted on stretching associated to melt processing: the molecular theory of Doi and Edwards~\cite{edwards} aimed to model molucular dynamics taking into account the repetion and orientation. This later has been firstly described to be the cause of stretching. 
+
+The understanding of molecular dynamics has a huge importance also in the biologic field Larson~\emph{et al.}~\cite{hsieh}
+exploited the experimental data obtained on a highly deformed DNA single-molecule
+and tested the investigate prediction capacity of a classical bead-spring model different
+state for streching have been tested and good accordance with experemental data has been found.
+The influence of Brownian force history has been highlighted for folded configuration.
+
+The investigation has been continued by Hur~\emph{et al.}~\cite{hur}, expanding simulations to several polymer; stochastic differential equations are derived from linear and non-linear models and probability distribution function of molecular extension has been simulated. Internal modes number has been proved to be the responsable for the PSD characteristics.
+Stochastic approach has been used also by Kroager~\emph{et al.}\cite{kroger} for linear polymers in dilute-$\theta$-solutions: interaction between chain length and several hydrodynamic parameters has been studied to understand the influence on numerical modeling.
+Good response has been achieved for normal-stress coefficients previsions.
+Jendrejack~\emph{et al.}\cite{jendrejack} follow the classical bead-spring model strategy aimed to reproduce molecular propierties influence on physical propierties: the ratio between local vector expressing the position of \textit{ith} bead , the radius of gyration and end-to-end distance is not influenced; results obtained with implementation of Fixman's method and semi-implicit integration show a good agreement with experimental one.
+
+The study of Hsieh~\emph{et al.}\cite{hsieh} included the bead-spring chains model, the hydrodynamic interactions: discretizations made with semi-implicit and explicit lead to similar results. In this work, as the authors remarked, it has been very difficult to capture the hydrodynamic parameter in the case of long chain and very low weight polystyrene;
+even though good results have been obtained matching the diffusivity with experimental values and this kind of numerical strategy has been used both for simulating DNA long chain molecules and polystyrene. 
+
+Jendrajack~\emph{et al.}\cite{jendrejack} highlighted the importance of hydrodynamic effects when a confined macromolecule is simulated: detail incorporation of solvent flow is important and it has been proved by numerically reproducing a group of DNA molecules migrating to the center of a microchannel, and the propensity of shifting to this points depends on molecular weight. In the work, volume forces has been neglected.
+Structural and rheological properties of a polymer dilute into a solution 
+calculed and $\alpha-phase$ DNA in bulk solution,
+starting from concentration data, have been studied in the work of Stoltz~\emph{et al.}\cite{stoltz},
+equilibrium conditions and simple shear with planar elongation are the cases under study.
+Independently on dynamical or equilibrium conditions, results show a functionality between concentration and molecular behaviour, under the value of $10\%$ of $c^*$, the overlap concentration on a manometer basis according to Doi and Edwards~\cite{edwards}. The authors included the effect of hydrodynamic interactions by varying concentrations. Numerical predictions on equilibrium case demostrated a decrease in chain size when concentration becames higher, similarly to results obtained for sufficientely low values of flow rates~\cite{Taylor}.
+
+
+
+
+
+
+
+%----------------------------------------------------------- paper 2010-2018 -----------------------------------------------------------------_%
+
+Recent works have proposed analytical model of different kind of molecules deformations; the dynamics of polymer chains in solutions has been recently investigated in the numerical work of D.~Kivotedes~et~al~\cite{demos1} and two main approaches have been used excluding the volume interaction effects: 
+the first pairwise potential forces while the second promotes chain uncrossability by approximating the beads behaviour with spring-spring model.
+The authors of~\cite{demos1}  took into account hydrodynamics interactions and thermal fluctuation.  
+
+The survey of D.~Kivotides~et~al~\cite{demos2}  couples Brownian-level interactions modelling with mesoscopic viscoelastic fluid one. 
+A classic \textit{bead-spring} approximation has been used to predict polymer behaviour, neglecting the processes of chain entanglement. 
+Good agreement have been found in the model proposed by the authors of~\cite{demos2}: whatever the value of molecular weight, predictions of longer relaxation time and equilibrium chain size is well reproduced.
+
+An interesting contribution to the correct numerical reproduction of polymer stretching is presented by D.~Kivotides~et~al~\cite{demos3} and a direct proportionality between stretching entity and steeper spectra has been demonstrated.
+
+The limit of numerical model presents a limitation on a correct reproduction on stretch when Reynolds number has a low value. The attention on the same course-grained molecular dynamics, focusing on real chain elasticity in dense polymer has been proposed in the work of~\cite{demos4}, where a parameter-free numerical strategy has been developed. 
+
+% ----------------------------------- more recent added 21/05 ------------%
+
+A Mathieu function has been used by Kurzhaler~\emph{et al.}\cite{kurz} to reach an exact solution for elastic and thermodynamic characteristics of a chain. A semiflexible polymer has been simulated by reproducing its bending energy with the integration of variable tangent vector of the polymer along the contour. The linear responce due to the compression force has been analytically and numerically obtained for different polymer: the predictions show a small crossover from an equilibrium condition to a final buckled configuration. Approximations are good for stiff polymers~\cite{frank} , away from the buckling transition due to the increasing of thermal fluctuations.
+
+
+%---------------------------------- old end of literature ------------------____%
+A contribution to laminar and unstable flow is given by the numerical model of work done byb Kivotides \emph{et al}~\cite{demos5}; incompressible flow have been studied in the model exposed by~\cite{str}, reducing the number of variable in the probability density function, it has been demonstrated the universality of the shape of eigenvalues probability distribution.
+
+In this work a new numerical approach will be esposed: the aim is the reproduction of polymer rheology for turbulent solutions through the implementation of molecular deformation, from the top to the bottom of chain; entanglement will be neglected.
+
+
+
+
+
+
+\section{Physics of Turbulent Flow}
+
+Flow can be divided into two different types, laminar and turbulent.
+A number of different physical characteristics determine whether a fluid obeys the principles of one or the other.
+
+\begin{itemize}
+
+\item \textbf{Laminar Flow} In laminar flow the molecules of the fluid can be imagined to be moving in numerous parallel 'layers' or laminae %as shown below.
+\item \textbf{Turbulent Flow} Not all fluid flow is laminar, but under certain physical conditions it becomes turbulent.
+When this happens, instead of the fluid moving in seemingly ordered 
+layers, the molecules become more disorganised and begin to swirl with the formation of eddy currents.
+\end{itemize}
+
+When we study flow, the most important thing is to establish if it is laminar or turbulent.
+
+In order to classify the flow used the control parameter \textbf{Reynolds Number (Re)} defined as the ratio between the Inertial force and the viscous one the transition from laminar and turbulent state occurs for:
+\begin{equation}
+\mathcal{R}e_L = \frac{\rho U_d L}{\mu} = \frac{U_d L}{\nu} \sim 2300
+\label{eq:re}
+\end{equation}
+where $\rho$ is the density of fluid, $\mu$ the dynamic viscosity, 
+$\nu$ the kinematic viscosity, $U_d$ the velocity of the fluid with respect to the object (observation point) and $L$ the characteristic length.  
+
+
+\subsection{Length and Time scales in Turbulent Flows}
+
+Turbulent flow occurs over wide range of length and time scales. 
+This variation in length and time scales is an important characteristic of turbulent flow, and a characteristic that is in part responsible for the difficulty encountered in numerical and theoretical analysis of turbulent flows. 
+
+
+\subsubsection{Turbulent length scale}
+
+Let us consider the range of length scale (eddy sizes) that one may expect to encounter in turbulent flow.
+The size of the largest eddies in the flow will be given by $L$ the smallest by $\eta$, the largest eddies in the flow account for the most of the transport of momentum and energy. $L$ depends only from the physical boundary of the flow.~\cite{wilcox} 
+The size of the smallest scales of the flow will be determined by viscosity. The smallest scales existing in a turbulent flow are those where the \textit{turbulent kinetic energy} is dissipated into heat.
+For a statistically steady turbulent flow, the energy dissipated at the small scales must equal the energy supplied by the large scales.
+From \textit{Kolmogorov's} theory the only factors influencing the behavioor of the small scale motion are the overall kinetic energy production rate and the viscosity. The dissipation rate will be indipendent of viscosity, \textit{but the scales at which this energy is dissipated will depend on both the dissipation rate and viscosity}~\cite{pope}. 
+The length scale is formulated by:
+
+\begin{equation}
+\eta = \left( \frac{\nu^3}{\epsilon}\right)^{1/4}
+\label{eq:eta}
+\end{equation}
+Where $\nu$ is the viscosity and $\epsilon$ the dissipation rate.
+This is called the \textit{Kolmogorov} length scale and is the smallest hydrodynamic scale in turbulent flows. 
+
+To relate this length to the largest scales in the flow we need an estimation for the dissipation rate in terms of the largest scale flow features. 
+The kinetic energy of the flow is proportional to $U^2$.
+The time scale of the large eddy (large eddy turnover) can be estimated as $L/U$, it is resonable to assume that the kinetic energy supply rate will be relate to the inverse of this time scale, the dissipation rated can now be estimated by:
+
+\begin{equation}
+\epsilon \sim \frac{U U}{L/U} \sim \frac{U^3}{L}
+\label{eq:epsilon}
+\end{equation}
+
+whit this estimation Eq.~\ref{eq:eta} becomes: 
+
+\begin{equation}
+\eta=\left(\frac{\nu^3 L}{U^3} \right)^{1/4}
+\label{eq:eta2}
+\end{equation}
+
+This now immediately gives an estimate for the ratio of the largest to smallest length scale in the flow:
+
+\begin{equation}
+\frac{L}{\eta} \sim  \left(\frac{UL}{\nu} \right)^{3/4} = \mathcal{R}e_L^{3/4}
+\label{eq:ratiolength}
+\end{equation}
+
+\subsubsection{Turbulent time scale}
+
+In the previous section we reffered to the ``large eddy turnover''  the time is defined by:
+
+\begin{equation}
+t_L = \frac{L}{U} 
+\label{eq:timel}
+\end{equation}
+from the information already presented, we can also generate a time scale for the small eddies using the viscosity and the dissipation~\cite{pope}.
+
+\begin{equation}
+t_\eta = \left( \frac{\nu}{\epsilon} \right)^{1/2}
+\label{eq:timeeta}
+\end{equation} 
+
+Using the previous estimate for the dissipation rate Eq.~\ref{eq:epsilon}  we obtain: 
+
+\begin{equation}
+t_\eta = \left( \frac{\nu L}{U^3} \right)
+\label{eq:timeeta2}
+\end{equation}
+
+The ratio of time scales is therefore:
+
+\begin{equation}
+\frac{t_L}{t_\eta} = \left( \frac{UL}{\nu} \right)^{1/2} = \mathcal{R}e_L^{1/2}
+\label{eq:timeratio}
+\end{equation}
+
+The large scale structures in the flow are seen to have much larger time scale (duration) than the smallest energy dissipation eddies.
+
+\subsection{Taylor turbulence microscale}
+\label{sec:taylor}
+Using the \textit{Reynolds number} to evaluate the flow has some limitation. For example when we deal with microscale (the case of polymer chain) the Reynolds number doesn't give us a correct prediction. In this case, we have to consider the \textit{Taylor turbulence microscale}~\ref{sec:taylor}.
+This length scale does not have the same easily understood physical significance as the Kolmogorov length scale but provides a convenient estimate for the fluctuation strain rate field. 
+The Taylor microscale, $\lambda$ is defined through the relation:
+
+\begin{equation}
+\left( \frac{\partial u'}{\partial x} \right) = \frac{u'^2}{\lambda^2}
+\label{eq:tay1}
+\end{equation}
+
+Where $u'$ is the Root Mean Square (rms) of the fluctuating velocity field.
+
+Since the Taylor Microscale is related to the turbulence fluctuations, it is sometimes called the \textit{turbulence length scale}.
+A turbulence Reynolds number can be computed based on Taylor microscale and the rms velocity fluctuations:
+
+\begin{equation}
+\mathcal{R}e_\lambda = \frac{u' \lambda}{\nu} 
+\end{equation}
+
+The Taylor microscale, $\lambda $ has a historical significance as it was the first length scale derived to describe the turbulence.
+
+\subsection{Modelling Turbulent Flow}
+
+When the flow become turbulent in order to study it and make prediction it must be modeled. The presence of shear stress make the system of the equation not closed.
+
+The set of the equation that governs a turbulent flow is reported:
+
+\begin{equation}
+\frac{\partial \rho}{\partial t} + \boldsymbol{\nabla} (\rho \bar{u}) = 0
+\label{eq:continuity}
+\end{equation}
+
+\begin{equation}
+\frac{\partial (\rho \bar{u})}{\partial t} + \boldsymbol{\nabla} \cdot (\rho\bar{u}\bar{u}) = -\boldsymbol{\nabla}p + \color{blue}{\mu \boldsymbol{\nabla}^2 \bar{u}} \color{black} + \rho \bar{g} + \sum_m^M S_{m}
+\label{eq:momentum}
+\end{equation}
+\begin{equation}
+\frac{\partial (\rho e )}{\partial t} + \boldsymbol{\nabla} \cdot (\rho e \bar{u} ) = \rho \bar{g} \cdot \bar{u} + \boldsymbol{\nabla} \cdot (\bar{u} \cdot \bar{S}) - \boldsymbol{\nabla} \cdot \lambda \boldsymbol{\nabla} T + \sum_{e}^E S_e
+\label{eq:energy}
+\end{equation}
+
+The blue term is the term containing the shear stress tensor, and is the term for which the system of equation become not-closed. 
+There are several way of modelling the system of Navier Stokes equations:
+\begin{itemize}
+ \item RANS: compute a temporal mean of the turbulent fluctuation losing all information regarding the scale of turbulence.
+ \item LES: more expensive compared to the RANS, but more accurate.
+ It computes a filtered solution (\emph{Sub Grid Scale}, SGS) of the turbulence fluctuations
+ \item DNS: the most accurate. It performs a direct resolution of all scale of the turbulence. In case of small dimensional problem \textit{(molecolar interaction study)} it is the more suitable. 
+\end{itemize}
+
+
+\section{Polymer Physics}
+
+It is well known that statistical mechanics provides a tool for the
+description of the relationship between the macroscopic behavior of substances
+and their atomic and/or molecular properties. Clearly, the same
+principles apply to polymer science as to the study of small molecules.
+However, polymeric systems are too complicated to treat rigorously on
+the basis of molecular mechanics, because polymer molecules have an
+exceedingly great number of internal degrees of freedom, and thereby
+also very complicated intramolecular 
+and intermolecular interactions.~\cite{yam} 
+
+In order to study this complicated macromolecule and its conformation and configuration, it is necessary to adopted a model for describe the behaviour of chain.
+
+There are two main different approaches used to study polymeric system:
+
+\begin{itemize}
+    \item \textbf{Ideal chain} 
+        \begin{itemize}
+            \item No correlation between polymer monomers seperated by long
+distances along the polymer
+            \item Short range correlations between neighboring monomers are not excluded
+            \item Ideal chain models do not take interactions caused by
+conformations in space into account
+            \item Ideal chains allow the polymer to cross itself
+        
+        \end{itemize}
+    \item \textbf{Real chain} 
+        \begin{itemize}
+            \item Long range interactions between monomers are taken into account
+            \item Interactions between solute and polymer and between different polymers
+            \item Excluded volume and self avoiding random walks
+        
+        \end{itemize}
+
+\end{itemize}
+The Ideal Chain situation in  is never completely realized for real chain, but there are several types of polymer system with nearly ideal chain.
+
+The next section introduces some of the basic models used in polymer physics.
+
+\subsection{Model Polymer chain}
+
+When we modelling a polymer-chain each model have different values of the fundamental parameters:
+
+\begin{itemize}
+\item Conformation 
+  \begin{itemize}  
+    \item Torsion angle $\phi$
+    \item Bond angle $\theta$
+  \end{itemize}  
+ \item Bond Vector: starting from one end we use vectors $\mathbf{r}_i$ to represent the bonds 
+  \item End-to-end vector: the sum of all bond vectors $\vec{R}_n$.
+  \item Mean square of end-to-end distance $\big \langle R^2 \big \rangle $ 
+  \item Probability distribution function $P(N,\vec{R})$
+\end{itemize}
+
+
+
+\subsubsection{Freely jointed chain} 
+The most basic model describing the universal properties of a large class of polymers
+is the freely jointed chain (FJC) model: 
+
+No correlation between the directions of different bond vectors. $\theta$ and $\phi$ are free to rotate. All bond vectors have length $l = |\vec{r_i}|$ 
+
+\begin{equation}
+\big \langle \vec{R}^2 \big \rangle = \big \langle \vec{R}_n \cdot \vec{R}_n \big \rangle = \sum_{i=1}^N \sum_{j=1}^N \big \langle \vec{r}_i \cdot \vec{r}_j \big \rangle 
+\end{equation}
+but 
+\begin{equation}
+ \big \langle \vec{r}_i \cdot \vec{r}_j \big \rangle = \big\langle l l \cos(\theta_{ij}) \big\rangle    \Rightarrow \big\langle \vec{R}^2 \big\rangle = l^2 \sum_{i=1}^N \sum_{j=1}^N \big \langle \cos(\theta_{ij}) \big\rangle \end{equation}
+
+Considering that there is no correlation between the direction of different bond vectors $(\cos(\theta_{ij})=0)$ when $i \neq j$ 
+\begin{equation}
+\lang \vec{r}_i \cdot \vec{r}_j \rang = \lang \vec{r}_i \rang \cdot 
+\lang \vec{r}_j \rang = 0 \quad \Rightarrow \quad \lang R^2 \rang = nl^2  \quad \Rightarrow \quad R \propto \sqrt{n}
+ \end{equation}
+
+\subsubsection{Freely Rotating Chain}
+Another simple model is the freely rotating chain, this model ignore differences between the probability of different \textit{torsion angle} and assumes all torsion angles $-\pi < \phi_i \leq \pi $ to be equali probable~\cite{pp} 
+
+\begin{equation} 
+\lang \vec{R}^2 \rang=  \sum_{i=1}^N \sum_{j=1}^N \lang \vec{r}_i \cdot \vec{r}_j \rang 
+\label{eq:r2}
+\end{equation}
+
+The general expression becames (see \cite{pp}) :
+\begin{equation}
+\lang \vec{r}_i \cdot \vec{r}_j \rang = l^2 \cos(\theta)^{|i-j|}
+\end{equation}
+Inserting this expression in our equation for $\lang R^2 \rang$ eq.~\ref{eq:r2} 
+\begin{equation}
+\lang \vec{R}^2 \rang=  \sum_{i=1}^N \sum_{j=1}^N \lang \vec{r}_i \cdot \vec{r}_j \rang = l^2  \sum_{i=1}^N \sum_{j=1}^N (\cos(\theta))^{|i-j|}
+\end{equation}
+This is solved by manipulating sums, and writing the rapidly decaying cosine terms as an infinite series. For calculation see~\cite{pp}
+\begin{equation}
+\lang \vec{R}^2 \rang = nl^2 \frac{1+\cos\theta}{1-\cos\theta} 
+\end{equation}
+
+We can see, that the introduction of correlation has not changed the proportionality to $\sqrt{n}$. we have just added a constant $>1$
+For range limited interactions this will always be the case 
+
+\begin{equation}
+\lim_{|j-i|\rightarrow \infty} \lang \cos\theta_{ij}\rang =0 \quad \Rightarrow \quad \sum_{j=1}^N \lang \cos\theta_{ij} \rang = C'_i
+\end{equation}
+\begin{equation}
+\lang R^2 \rang = \sum_{i=1}^N \sum_{j=1}^N \lang \cos\theta_{ij}\rang = l^2 \sum_{i=1}^N C'_i = nl^2 C_\infty
+\end{equation}
+$C_\infty$ is called Flory's characteristic ratio, and can be seen as a measure of the stiffness of the polymer in a given ideal chain model.
+For the rotating chain we have:
+\begin{equation}
+C_\infty = \frac{1+\cos\theta}{1-\cos\theta}
+\end{equation}
+
+\subsubsection{The worm like chain}
+Continous development of the freely rotating chain for small bond angles $\theta$, used for polymer with high stiffness 
+The meaningfull limits to take in this development are: $l\rightarrow0$,  $\theta \rightarrow 0$  but contour length $nl$ and persistence length l$_p$ remain the same.
+
+We calculate the mean square end-to-end distance: 
+\begin{equation}
+\lang R^2 \rang = l^2 \sum_{i=1}^N \sum_{j=1}^N \lang \vec{r}_i \cdot \vec{r}_j \rang = l^2 \si \sj (\cos\theta)^{|i-j|} = l^2 \si \sj \exp \left[ -\frac{|i-j|}{l_p}l \right]
+\label{rr}
+\end{equation}
+Changing the sum over segment into an integral over countour: 
+\begin{equation}
+l \si \rightarrow \int_0^{R_{\text{max}}} ds \qquad \text{and} \qquad l \sj \rightarrow \int_0^{R_{\text{max}}} ds'
+\end{equation}
+the Equation~\ref{rr} become:
+\begin{equation}
+\lang R^2 \rang = \int_0^{R_{\text{max}}}  \int_0^{R_{\text{max}}} \left[ \exp\left( \frac{s-s'}{l} \right) \right] ds'ds \quad = \quad 2l_p R_{\text{max}} - 2l_p^2 \left(1-\exp-\frac{R_{\text{max}}}{l_p} \right)
+\end{equation}
+%The two interesting limits are for the maximum end-to-end distance $R_{\text{max}} \ll l_p $
+\subsubsection{Hindered rotation model}
+
+The \textit {hindered rotation model} also assumes bond lengths and bond angles are constant, and torsion angle are independent of each other. 
+The hindered rotation models predicts the mean square end-to-end distance:
+\begin{equation}
+\lang R^2 \rang = C_\infty l^2 n
+\end{equation}
+
+with the characteristic ratio :
+
+\begin{equation}
+C_\infty = \left(\frac{1+\cos \theta}{1-\cos \theta} \right) \left(\frac{1+\lang\cos\phi\rang}{1-\lang\cos\phi\rang}\right)
+\end{equation}
+
+where $\lang \cos \phi\rang $ is the average value of the cosine of the torsion angle with probabilities determined by Boltzman factor, $\exp[-U(\phi)/kT]$:
+
+\begin{equation}
+\lang \cos\phi\rang = \frac{\int^{2\pi}_0 \cos\phi \exp(-U(\phi)/kT)d\phi}{\int^{2\pi}_0 \exp(-U(\phi)/kT)d\phi}
+\end{equation}
+
+
+
+
+
